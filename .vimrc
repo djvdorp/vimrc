@@ -26,6 +26,7 @@
         " Color Schemes
             Plug 'chriskempson/vim-tomorrow-theme'
             Plug 'altercation/vim-colors-solarized'
+            Plug 'chriskempson/base16-vim'
         " Color Schemes end
 
         " Python
