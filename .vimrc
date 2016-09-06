@@ -18,6 +18,7 @@
             Plug 'tpope/vim-abolish'
             Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' } "Post install hooks
             Plug 'vim-airline/vim-airline'
+            Plug 'vim-airline/vim-airline-themes'
             Plug 'scrooloose/syntastic'
             Plug 'Valloric/YouCompleteMe', { 'do' : '~/.vim/plugged/YouCompleteMe/install.py --gocode-completer' } "Post install hooks
         " General Vim end
@@ -49,13 +50,6 @@
 
 " Plug end
 
-" Set Vim defaults
-    set nobackup
-    syntax enable
-    set background=dark
-    colorscheme solarized
-" Set Vim defaults end
-
 " Vim Plug Configs
     let g:airline_powerline_fonts   = 0
     let g:airline_left_sep          = ''
@@ -64,4 +58,11 @@
     " Activate Plug
     call plug#end()
     " Activate Plug end
+
+" Set Vim defaults
+    set nobackup
+    syntax enable
+    set background=dark
+    colorscheme solarized
+" Set Vim defaults end
 " Vim Plug Configs end
