@@ -24,6 +24,7 @@
         " General Vim end
 
         " Color Schemes
+            Plug 'chriskempson/vim-tomorrow-theme'
             Plug 'altercation/vim-colors-solarized'
         " Color Schemes end
 
