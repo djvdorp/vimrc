@@ -102,6 +102,7 @@
     set showmatch
     set fileformat=unix
     set autoindent
+    set autowrite
     filetype plugin indent on
 
     colorscheme Tomorrow-Night-Eighties
