@@ -114,19 +114,21 @@
     nnoremap <F12> :set invpaste paste?<CR>
 
     let mapleader=','
-    map <leader>= <C-W>=
+    " Vim-fugutive
     map <leader>gd :Gdiff<CR>
     map <leader>gb :Gblame<CR>
     map <leader>gc :Gcommit<CR>
     map <leader>gs :Gstatus<CR>
     map <leader>gr :Gremove<CR>
     map <leader>gw :Gwrite<CR>
+    " Vim-gitgutter
     map <leader>gn :GitGutterNextHunk<CR>
     map <leader>gp :GitGutterPrevHunk<CR>
-    map <leader>w <C-W><C-O>
-    map <leader>p :CtrlPBuffer<CR>
-    map <leader>u :UndotreeToggle<CR>
+    " Syntastic
     map <leader>e :SyntasticCheck<CR>:Errors<CR><C-W>j
+    " Misc
+    map <leader>= <C-W>=
+    map <leader>w <C-W><C-O>
     map <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
     map <leader>h <C-W>h
     map <leader>j <C-W>j
