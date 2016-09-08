@@ -52,16 +52,29 @@
 " Plug end
 
 " Vim Plug Configs
-    let g:airline_enable_syntastic      = 1
-    let g:airline_detect_modified       = 1
-    let g:airline_detect_paste          = 1
-    let g:aurline_enable_fugitive       = 1
-    let g:airline_powerline_fonts       = 0
-    let g:airline_left_sep              = ''
-    let g:airline_right_sep             = ''
-    let g:syntastic_check_on_open       = 1
-    let g:syntastic_python_checkers     = ['flake8']
-    let g:syntastic_javascript_checkers = ['jshint']
+    " Airline
+    let g:airline_enable_syntastic          = 1
+    let g:airline_detect_modified           = 1
+    let g:airline_detect_paste              = 1
+    let g:airline_enable_fugitive           = 1
+    let g:airline_powerline_fonts           = 0
+    let g:airline_left_sep                  = ''
+    let g:airline_right_sep                 = ''
+    " Syntastic
+    let g:syntastic_check_on_open           = 1
+    let g:syntastic_go_checkers             = ['golint', 'govet', 'errcheck']
+    let g:syntastic_javascript_checkers     = ['jshint']
+    let g:syntastic_mode_map                = { 'mode': 'active', 'passive_filetypes': ['go'] }
+    let g:syntastic_python_checkers         = ['flake8']
+    " Vim-go
+    let g:go_fmt_command                    = "goimports"
+    let g:go_highlight_functions            = 1
+    let g:go_highlight_methods              = 1
+    let g:go_highlight_fields               = 1
+    let g:go_highlight_types                = 1
+    let g:go_highlight_operators            = 1
+    let g:go_highlight_build_constraints    = 1
+    let g:go_list_type                      = "quickfix"
 
     " Activate Plug
     call plug#end()
