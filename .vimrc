@@ -108,11 +108,14 @@
 
     colorscheme Tomorrow-Night-Eighties
 
+    " Use F2 to toggle line numbers
     nnoremap <F2> :set nonumber!<CR>
 
-    set pastetoggle=<F12>
+    " Use F12 to toggle paste mode
     nnoremap <F12> :set invpaste paste?<CR>
+    set pastetoggle=<F12>
 
+    " Use , as leader
     let mapleader=','
     " Vim-fugutive
     map <leader>gd :Gdiff<CR>
