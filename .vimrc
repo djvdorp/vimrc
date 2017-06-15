@@ -17,7 +17,7 @@
             Plug 'tpope/vim-surround'
             Plug 'tpope/vim-abolish'
             Plug 'tpope/vim-dispatch'
-            Plug 'wincent/command-t', { 'do': 'cd ~/.vim/plugged/command-t/ruby/command-t/ && ruby extconf.rb && make' } "Post install hooks
+            Plug 'wincent/command-t', { 'do': 'cd ~/.vim/plugged/command-t/ruby/command-t/ext/command-t/ && ruby extconf.rb && make' } "Post install hooks
             Plug 'vim-airline/vim-airline'
             Plug 'vim-airline/vim-airline-themes'
             Plug 'scrooloose/syntastic'
