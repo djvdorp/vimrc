@@ -106,7 +106,7 @@
     set autowrite
     filetype plugin indent on
 
-    colorscheme Tomorrow-Night-Eighties
+    colorscheme molokai
 
     " Use F2 to toggle line numbers
     nnoremap <F2> :set nonumber!<CR>
