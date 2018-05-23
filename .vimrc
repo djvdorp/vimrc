@@ -59,10 +59,10 @@
     let g:airline_detect_modified           = 1
     let g:airline_detect_paste              = 1
     let g:airline_enable_fugitive           = 1
-    " Clearly this only works with airline enabled with powerline fonts
-    let g:airline_powerline_fonts           = 1
     let g:airline_left_sep                  = ''
     let g:airline_right_sep                 = ''
+    " Clearly this only works with airline enabled with powerline fonts
+    let g:airline_powerline_fonts           = 1
     " Syntastic
     let g:syntastic_check_on_open           = 1
     let g:syntastic_go_checkers             = ['golint', 'govet', 'errcheck']
@@ -95,8 +95,6 @@
     set tabstop=4
     set number
     set incsearch
-    set t_Co=256
-    set laststatus=2
     set cursorline
     set background=dark
     set mousehide
@@ -106,7 +104,15 @@
     set autoindent
     set smartindent
     set autowrite
+    " Always show statusline
+    set laststatus=2
+    " Use 256 colours (Use this setting only if your terminal supports 256 colours)
+    set t_Co=256
+    set term=xterm-256color
+    " Always use UTF-8
     set encoding=utf-8
+    set termencoding=utf-8
+
     filetype plugin indent on
 
     colorscheme molokai
