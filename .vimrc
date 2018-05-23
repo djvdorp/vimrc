@@ -103,7 +103,9 @@
     set showmatch
     set fileformat=unix
     set autoindent
+    set smartindent
     set autowrite
+    set encoding=utf-8
     filetype plugin indent on
 
     colorscheme molokai
