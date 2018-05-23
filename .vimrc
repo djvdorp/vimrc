@@ -94,6 +94,8 @@
     set tabstop=4
     set number
     set incsearch
+    set t_Co=256
+    set laststatus=2
     set cursorline
     set background=dark
     set mousehide
@@ -105,13 +107,6 @@
     filetype plugin indent on
 
     colorscheme molokai
-
-    " Powerline, via: https://gist.github.com/mrkara/68c6435f019136acd8db93546cff22e7
-    set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
-    " Always show statusline
-    set laststatus=2
-    " Use 256 colours (Use this setting only if your terminal supports 256 colours)
-    set t_Co=256
 
     " Use F2 to toggle line numbers
     nnoremap <F2> :set nonumber!<CR>
